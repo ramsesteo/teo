@@ -72,4 +72,4 @@ async def clear_downloads(_, message: Message):
         
 @app.on_message(filters.command(SAHIP_COMMAND) & SUDOERS)
 async def mesaj(client, message: Message):
-  message.reply("**Hoşgeldiniz Sahiplerim Bende Burdayım. Seviyorum Sizi🥳 💋 Muck** @DeepKral Ve @MissSahip")
+  await message.reply("**               ●𝐒𝐀𝐇İ𝐁İ𝐌●   **\n\n⫸⫸⫸⫸⫸⬇️⬇️⬇️⫷⫷⫷⫷⫷\n\n@DeepKraL ♚♚ @MissSahip")
