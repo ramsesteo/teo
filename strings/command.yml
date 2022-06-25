@@ -18,10 +18,10 @@ SETTINGS_COMMAND : ["settings", "ayarlar"]
 RELOAD_COMMAND : ["admincache", "reload"]
 GSTATS_COMMAND : ["gstats"]
 STATS_COMMAND : ["stats"]
-LANGUAGE_COMMAND : ["lang", "language", "langs"]
+LANGUAGE_COMMAND : ["tr"]
 
 # Play Commands
-PLAY_COMMAND : ["oynat", "vplay", "cplay", "cvplay", "hemenoynat", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["oynat", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
 PLAYMODE_COMMAND : ["oynatmodu"]
 CHANNELPLAY_COMMAND : ["kanalmodu"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
@@ -66,6 +66,7 @@ BROADCAST_COMMAND : ["reklam"]
 BLACKLISTCHAT_COMMAND : ["grupban"]
 WHITELISTCHAT_COMMAND : ["ungrupban"]
 BLACKLISTEDCHAT_COMMAND : ["grupbanlist"]
+KOMUTLAR_COMMAND : ["komutlar"]
 
 # Video Calls Command
 VIDEOLIMIT_COMMAND : ["set_video_limit"]
