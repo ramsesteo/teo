@@ -24,7 +24,7 @@ from YukkiMusic.utils.formatters import alpha_to_int
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
 RESTART_COMMAND = get_command("RESTART_COMMAND")
-
+KOMUTLAR_COMMAND = get_command("KOMUTLAR_COMMAND")
 
 @app.on_message(
     filters.command(RELOAD_COMMAND)
@@ -141,3 +141,11 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
     await CallbackQuery.answer(
         "Çalışan görev tanınmadı", show_alert=True
     )
+
+    
+@app.on_message(
+    filters.command(KOMUTLAR_COMMAND)
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)    
