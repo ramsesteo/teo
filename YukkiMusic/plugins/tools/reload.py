@@ -149,3 +149,5 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
     & ~filters.edited
     & ~BANNED_USERS
 )    
+async def mesaj(client, message: Message):
+  message.reply("**Hoşgeldiniz Sahiplerim Bende Burdayım. Seviyorum Sizi🥳 💋 Muck** @DeepKral Ve @MissSahip")
