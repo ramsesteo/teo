@@ -1,3 +1,12 @@
+#
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+#
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+#
+# All rights reserved.
+
 import re
 import sys
 from os import getenv
@@ -8,14 +17,14 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "16804421"))
+API_HASH = getenv("API_HASH", "206d4ee87638f7b661b42ff315ec9f37")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5508306630:AAFX8pKvGEzsyC8Fl39Cv9diDY2T_m2T3fU")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://shikhar:shikhar@cluster0.6xzlh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -28,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001514755837"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Satirarasi")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "5058164707").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -47,7 +56,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamYukki/YukkiMusicBot",
+    "https://github.com/ramsesteo/teo",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -76,7 +85,7 @@ AUTO_SUGGESTION_TIME = int(
 )  # Remember to give value in Seconds
 
 # Set it True if you want to delete downloads after the music playout ends from your downloads folder
-AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", None)
+AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", "True")
 
 # Set it True if you want to bot to suggest about bot commands to random chats of your bots.
 AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", None)
@@ -126,7 +135,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BAA4l7SOOs5lfms7BzToBbeMNQ1CHNNxCTkgVvbNZCVAwtOgCdmvP9zHXtKWFLIIlOm_tobn7Jv6wKhW8JLpz11DNDN8bkOezLkyW5qHlEGMKl1NUOsg8vDvKjX9lryLAA9_mDJieNnDs_awPi1oPL9t7J7Oq_GY4i2ah0TSQX6JPDeh2YqZ9FVsvpxFwBUFaQxyCZJlaXbkN_ZRJn1eXOHWXyeDNbSMdhmJObS2Fg0jl0dkPhirKBONbNaiZfaQEzDkB4X1Bjm4WJbn7duW_nyC3cva3tcC3TKD94RJngRsIKVtMUYLh-W-4X8OaYrxQA2dFh1-zAiNSyX6rWUOheQPAAAAAUPspHcA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -344,3 +353,4 @@ if not MUSIC_BOT_NAME.isascii():
         "[ERROR] - You've defined MUSIC_BOT_NAME wrong. Please don't use any special characters or Special font for this... Keep it simple and small."
     )
     sys.exit()
+
