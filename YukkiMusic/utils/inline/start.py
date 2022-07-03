@@ -83,7 +83,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 [
                     InlineKeyboardButton(
                        text=_["ST_B_28"],
-                       url=f"https://t.me/SohbetMissMuhabbet"
+                       url=f"https://t.me/siirkitapsohbeti
                     )
                 ]
             )
@@ -130,6 +130,6 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 ]
             )
     buttons.append(
-        [InlineKeyboardButton(text=_["ST_B_29"], url=f"https://t.me/YoutubeVcDestek")]
+        [InlineKeyboardButton(text=_["ST_B_29"], url=f"https://t.me/siirkitapsohbeti")]
     )
     return buttons
