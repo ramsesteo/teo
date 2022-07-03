@@ -76,7 +76,7 @@ VIDEOMODE_COMMAND : ["videomode"]
 MAINTENANCE_COMMAND : ["bakım"]
 TEMIZLEME_COMMAND : ["sil"]
 LOGGER_COMMAND : ["logger"]
-SAHIP_COMMAND : ["miss"]
+SAHIP_COMMAND : ["teo"]
 
 #Heroku
 GETLOG_COMMAND : ["get_log"]
