@@ -87,12 +87,12 @@ async def varsFunc(client, message):
     owner_id = " ,".join(owners)
     tg_aud = convert_bytes(config.TG_AUDIO_FILESIZE_LIMIT)
     tg_vid = convert_bytes(config.TG_VIDEO_FILESIZE_LIMIT)
-    text = f"""**Youtube Player Pro:**
+    text = f"""**SATIR ARASI MUSİC BOT:**
 
 **<u>Hakkımızda</u>**
 `Kanalımız` : @YoutubeVcDestek
-`Grubumuz` : @sohbetmissmuhabbet
-`Yapımcım` : @DeepKral && @MissSahip
+`Grubumuz` : @siirkitapsohbeti
+`Yapımcım` : TEO
     """
     await asyncio.sleep(1)
     await mystic.edit_text(text)
