@@ -141,13 +141,3 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
     await CallbackQuery.answer(
         "Çalışan görev tanınmadı", show_alert=True
     )
-
-    
-@app.on_message(
-    filters.command(KOMUTLAR_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)    
-async def mesaj(client, message: Message):
-  message.reply("**Hoşgeldiniz Sahiplerim Bende Burdayım. Seviyorum Sizi🥳 💋 Muck** @DeepKral Ve @MissSahip")
