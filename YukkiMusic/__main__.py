@@ -72,10 +72,10 @@ async def init():
     except:
         pass
     await Yukki.decorators()
-    LOGGER("YukkiMusic").info("Youtube Player Pro Başarıyla Başlatıldı")
+    LOGGER("YukkiMusic").info("KafaTaslak Music Bot Başarıyla Başlatıldı")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("YukkiMusic").info("Youtube Player Pro Bot'u Durduruldu! Güle güle")
+    LOGGER("YukkiMusic").info("KafaTaslak Music Bot'u Durduruldu! Güle güle")
